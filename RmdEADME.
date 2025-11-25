@@ -1,0 +1,45 @@
+# Online-banking-management-system
+Guvi project (Review - 1)
+
+
+# Online Banking System
+
+## Project Overview
+A Java GUI banking application demonstrating Object-Oriented Programming principles with complete banking functionality. Built with Swing interface and in-memory data storage.
+
+## Main Features
+- **User Authentication** - Secure login system
+- **Account Management** - Create/view savings and current accounts
+- **Banking Operations** - Deposit, withdraw, transfer funds
+- **Transaction Tracking** - Complete history with balances
+- **Balance Validation** - Automatic balance checking
+
+## Technical Implementation
+- **OOP Principles**: Polymorphism through IAccount interface, inheritance with Account hierarchy
+- **Exception Handling**: Custom exceptions for business rules
+- **Collections**: Thread-safe data storage using ConcurrentHashMap
+- **GUI Design**: Swing-based user interface
+- **Architecture**: MVC pattern with service layer separation
+
+## Quick Start
+1. Run `Main.java` in IntelliJ
+2. Login with:
+   - Username: `john` | Password: `password123` (Savings)
+   - Username: `jane` | Password: `password123` (Current)
+3. Use dashboard for banking operations
+
+## Project Structure
+- **gui/**: Login, Dashboard, Transaction frames
+- **service/**: BankService with business logic
+- **model/**: Account, Transaction, User classes
+- **exception/**: Custom business exceptions
+- **dao/**: InMemoryStorage for data persistence
+
+## Key Classes
+- `BankService` - Core banking operations
+- `Account/SavingsAccount/CurrentAccount` - Account hierarchy
+- `InMemoryStorage` - Data management
+- `LoginFrame/DashboardFrame` - User interface
+
+No database setup required - uses efficient in-memory storage. Perfect for demonstrating Java OOP concepts and GUI development.
+LoginFrame/DashboardFrame - User interface
